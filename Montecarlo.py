@@ -3,7 +3,8 @@ import random
 import math
 N=2500000
 
-f=open('registro.txt', 'w')
+##Descomentar para escribir las iteraciones en un archivo
+##f=open('registro.txt', 'w')
 
 ##definiendo la integral en terminos de x[0], x[1], x[2]... x[n-1] done n es el numero de variables
 ## por ejemplo para la ecuacion de un circulo unitario
@@ -38,11 +39,13 @@ for i in range(N):
     for j in range(len(SS)):
         x.append(random.randrange(SS[j][0],SS[j][1], _int=float))
     suma+=fx(x)
+##Descomentar para escribir las iteraciones en un archivo
 ##    if i!=0:
 ##        f.write('Iteracion:'+'\t'+str(i)+'\t'+'sumatoria: '+'\t'+str(suma)+'\t'+'Respuesta Relativa:'+'\t'+str(float(V)/i*suma)+'\n')
         
 ##Imprimiendo el resultado.
 Qn=float(V)/N*suma
+##Descomentar para escribir las iteraciones en un archivo
 ##f.write('Resultado='+'\t'+str(Qn)+'\t'+'con'+'\t'+str(N)+'\t'+'iteraciones')
 ##f.close()
 print Qn
