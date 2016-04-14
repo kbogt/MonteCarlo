@@ -1,2 +1,2 @@
 # MonteCarlo
-Monte Carlo simulation programs
+Monte Carlo simulation scripts
